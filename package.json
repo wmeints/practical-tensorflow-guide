@@ -1,0 +1,19 @@
+{
+  "name": "tensorflow-exam-guide",
+  "version": "0.0.1",
+  "description": "A free guide to using TensorFlow for building deep learning models",
+  "main": "index.js",
+  "authors": {
+    "name": "Willem Meints",
+    "email": "willemm@infosupport.com"
+  },
+  "repository": "https://github.com/wmeints/tensorflow-guide",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
