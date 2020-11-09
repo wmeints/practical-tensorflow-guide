@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Building deep learning using Tensorflow',
+  title: 'Practical deep learning using Tensorflow',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -38,36 +38,30 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Getting started',
+        link: '/getting-started/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Building deep learning models',
+        link: '/building-deep-learning-models/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Deploying deep learning models',
+        link: '/deploying-deep-learning-models/'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      '/',
+      '/building-deep-learning-models',
+      '/deploying-deep-learning-models',
+    ]
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
+    require('./plugins/sidebar/index.js'),
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
   ]
