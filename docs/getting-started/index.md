@@ -14,3 +14,4 @@ In this section of the guide we'll cover the following topics:
 - [Setting up your machine](setting-up-your-machine.md)
 - [Exploring TensorFlow](exploring-tensorflow.md)
 
+Let's get started!
