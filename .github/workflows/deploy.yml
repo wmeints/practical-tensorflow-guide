@@ -25,14 +25,18 @@ jobs:
         run: npm install
       - name: Compile website
         run: npm run build
-      - name: Deploy website
+      - name: Setup deployment 
         run: |
-          cd dist
+          cd dist/
           git init
-          git config user.name "Willem Meints"
-          git config user.email ""
+          git config user.name "Github actions"
+          git config user.email "action@github.com"
           git add -A
-          git commit -m 'Update website'
-          git branch -m gh-pages
-          git push -f --set-upstream https://${{ secrets.ACCESS_TOKEN }}:x-oauth-basic@github.com/wmeints/practical-tensorflow-guide.git gh-pages
-          cd -
+          git commit -m "Deployment update"
+      - name: Deploy website
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: dist/
