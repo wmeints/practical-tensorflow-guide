@@ -11,10 +11,12 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    repo: 'wmeints/practical-tensorflow-guide',
+    repoLabel: 'Contribute!',
+    editLinks: true,
+    editLinkText: 'Help us improve this page!',
+    docsDir: 'docs',
+    docsBranch: 'main',
     lastUpdated: false,
     nextLinks: true,
     prevLinks: true, 
@@ -22,10 +24,6 @@ module.exports = {
       {
         text: 'About the author',
         link: './about.md',
-      },
-      {
-        text: 'Help improve the guide',
-        link: 'https://github.com/wmeints/practical-tensorflow-guide/'
       }
     ],
     sidebar: [
