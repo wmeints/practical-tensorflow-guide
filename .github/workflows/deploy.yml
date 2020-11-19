@@ -33,5 +33,6 @@ jobs:
           git config user.email ""
           git add -A
           git commit -m 'Update website'
-          git push -f https://${{ secrets.ACCESS_TOKEN }}:x-oauth-basic@github.com/wmeints/practical-tensorflow-guide.git
+          git branch -m gh-pages
+          git push -f --set-upstream https://${{ secrets.ACCESS_TOKEN }}:x-oauth-basic@github.com/wmeints/practical-tensorflow-guide.git gh-pages
           cd -
