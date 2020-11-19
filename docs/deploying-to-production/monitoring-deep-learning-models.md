@@ -1,6 +1,6 @@
 ---
 next: false
-prev: ./using-tensorflow-serving.md
+prev: ./using-tensorflow-extended.md
 ---
 # Monitoring deep learning models
 
