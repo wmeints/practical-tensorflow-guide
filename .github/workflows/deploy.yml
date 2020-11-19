@@ -23,12 +23,15 @@ jobs:
         name: Check out sources
       - name: Install dependencies
         run: npm install
+      - name: Compile website
+        run: npm run build
       - name: Deploy website
-        uses: jenkey2011/vuepress-deploy@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: wmeints/practical-tensorflow-guide
-          TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: npm run build
-          BUILD_DIR: dist/
-
+        run: |
+          cd dist
+          git init
+          git config user.name "Willem Meints"
+          git config user.email ""
+          git add -A
+          git commit -m 'Update website'
+          git push -f https://${{ secrets.ACCESS_TOKEN }}:x-oauth-basic@github.com/wmeints/practical-tensorflow-guide.git
+          cd -
