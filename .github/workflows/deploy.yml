@@ -29,6 +29,8 @@ jobs:
         run: |
           cd dist
           git init
+          git config user.name "Willem Meints"
+          git config user.email "1550763+wmeints@users.noreply.github.com"
           git add -A
           git commit -m 'Update website'
           git push -f git@github.com:wmeints/practical-tensorflow-guide.git master:gh-pages
