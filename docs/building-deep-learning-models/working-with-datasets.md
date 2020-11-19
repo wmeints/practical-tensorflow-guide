@@ -1,5 +1,5 @@
 ---
-prev: ./index.md
+prev: /building-deep-learning-models/
 next: ./building-a-feed-forward-network.md
 ---
 # Working with datasets

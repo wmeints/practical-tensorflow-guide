@@ -46,6 +46,7 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 1,
         children: [
+          ['/building-deep-learning-models/working-with-datasets', 'Working with datasets'],
           ['/building-deep-learning-models/building-a-feed-forward-network', 'Building a feed-forward network'],
           ['/building-deep-learning-models/validating-model-performance', 'Validating model performance'],
           ['/building-deep-learning-models/working-with-images', 'Working with images'],
