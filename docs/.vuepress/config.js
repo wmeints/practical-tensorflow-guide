@@ -20,16 +20,12 @@ module.exports = {
     prevLinks: true, 
     nav: [
       {
-        text: 'Getting started',
-        link: '/getting-started/',
+        text: 'About the author',
+        link: './about.md',
       },
       {
-        text: 'Building deep learning models',
-        link: '/building-deep-learning-models/'
-      },
-      {
-        text: 'Deploying deep learning models',
-        link: '/deploying-deep-learning-models/'
+        text: 'Help improve the guide',
+        link: 'https://github.com/wmeints/practical-tensorflow-guide/'
       }
     ],
     sidebar: [
